@@ -1,0 +1,91 @@
+
+/* Основной цвет заноловков №212121   1*/
+/* Цвеет h1, текс в акценте, Syudio в футере, адресс в футере #FFFFFF */
+/* Цвет Акцент, Web (Хедере и футер)и Ховер  #2196F3 */
+/* Цвет абзаца, емайл и тел 757575   1 */
+/* Цвет емайл и тел в футере FFFFFF   0.6*/
+/* Адерсс FFFFFF   1 */
+ /* Вторичный цвет фона F5F4FA */
+ /* logo */
+
+ :root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --head-text-color: #FFFFFF;
+    --primary-bg-color: #FFFFFF;
+ }
+
+.page {
+    background-color:var(--primary-bg-color);
+    color: #757575;
+}
+ul {
+    list-style: none;
+}
+
+
+
+.logo {
+    color: #2196F3;
+}
+.logo-studio {
+    color: #000000;
+}
+/* site-nav */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.contacts-header .link {
+    color: var(--primary-text-color);
+}
+.contacts-header .link:hover,
+.contacts-header .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+/* hero */
+
+.hero-title {
+        color:var(--title-text-color);
+}
+/* sections */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* advantages */
+
+.advantage-list .title {
+    color: var(--title-text-color);
+}
+
+/* serrvice */
+
+.service-list {
+}
+
+/* team */
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-list .team-name,
+.team-title {
+    color: var(--title-text-color);
+}
+
+/* button */
+
+.button {
+    color: var(--head-text-color);
+    background-color: var(--accent-color);
+}
