@@ -6,6 +6,8 @@
 /* Цвет емайл и тел в футере FFFFFF   0.6*/
 /* Адерсс FFFFFF   1 */
  /* Вторичный цвет фона F5F4FA */
+/*  */
+
  /* logo */
 
  :root {
@@ -14,6 +16,7 @@
     --accent-color: #2196F3;
     --head-text-color: #FFFFFF;
     --primary-bg-color: #FFFFFF;
+    --background-footer: #2F303A;
  }
 
 .page {
@@ -24,10 +27,10 @@ ul {
     list-style: none;
 }
 
-
+/* Хедер */
 
 .logo {
-    color: #2196F3;
+    color:var(--accent-color);
 }
 .logo-studio {
     color: #000000;
@@ -88,4 +91,14 @@ ul {
 .button {
     color: var(--head-text-color);
     background-color: var(--accent-color);
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--background-footer);
+}
+
+.logo-studio-footer {
+    color: var(--head-text-color);
 }
