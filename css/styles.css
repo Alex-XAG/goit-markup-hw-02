@@ -47,9 +47,11 @@ ul {
 
 .logo {
     color:var(--accent-color);
+    text-decoration: none;
 }
 .logo-studio {
     color: #000000;
+    text-decoration: none;
 }
 /* site-nav */
 .site-nav .link {
@@ -59,13 +61,18 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
+.site-nav .link.current {
+    text-decoration: none;
+}
 .contacts-header .link {
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 .contacts-header .link:hover,
 .contacts-header .link:focus {
@@ -91,19 +98,21 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    background-color: var(--primary-text-color);
+    /* Временный фон!!! */
 }
 
 /* button */
 
 .button {
+    
     color: var(--head-text-color);
     background-color: var(--accent-color);
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-/* identical to box height, or 188% */
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -145,41 +154,61 @@ ul {
     background-color: #F5F4FA;
 }
 
-.team-list .team-name {
-    color: var(--title-text-color);
-}
-
 /* Футер */
 
 .footer {
     background-color: var(--background-footer);
 }
 
-.logo-studio-footer {
-    font-family: 'Raleway';
-    font-style: normal;
+.footer .logo-studio-footer {
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: 1.19;
+
+    text-decoration: none;
+    font-style: normal;    
     color: var(--head-text-color);
 }
-.adress-footer {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--head-text-color);
-}
-.footer-link {
-    font-family: 'Roboto';
-    font-style: normal;
+.footer .adress-footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6)
-;
+
+    text-decoration: none;
+    font-style: normal; 
+    color: var(--head-text-color);    
 }
+.footer .footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    text-decoration: none;
+    font-style: normal; 
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+.portfolio .portfolio-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+}
+.portfolio .portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--primary-text-color);
+}
+.portfolio-link {
+    text-decoration: none;
+}
+
+ /* button portfolio */
+
