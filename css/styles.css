@@ -8,7 +8,7 @@
  /* Вторичный цвет фона F5F4FA */
 /*  */
 
- /* logo */
+
 
  :root {
     --primary-text-color: #757575;
@@ -21,8 +21,24 @@
 
 .page {
     background-color:var(--primary-bg-color);
-    color: #757575;
+    color:var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    font-size: 14px;
+    line-height: 1.71;
+    
 }
+
+ /* logo */
+.logo, .logo-studio, .logo-studio-footer {
+    font-family: Raleway, sans-serif;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
 ul {
     list-style: none;
 }
@@ -30,26 +46,19 @@ ul {
 /* Хедер */
 
 .logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
     color:var(--accent-color);
 }
 .logo-studio {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
     color: #000000;
 }
 /* site-nav */
 .site-nav .link {
     color: var(--title-text-color);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -64,38 +73,24 @@ ul {
 }
 .site-nav .link.current {
     color: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 /* hero */
 
 .hero-title {
-        color:var(--title-text-color);
-}
-/* sections */
+    color:var(--head-text-color);
 
-.section-title {
-    color: var(--title-text-color);
-}
-
-/* advantages */
-
-.advantage-list .title {
-    color: var(--title-text-color);
-}
-
-/* serrvice */
-
-.service-list {
-}
-
-/* team */
-
-.team {
-    background-color: #F5F4FA;
-}
-
-.team-list .team-name,
-.team-title {
-    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* button */
@@ -103,6 +98,55 @@ ul {
 .button {
     color: var(--head-text-color);
     background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+/* identical to box height, or 188% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+    color: var(--title-text-color);
+    background-color: var(--primary-text-color)
+}
+/* sections */
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* advantages */
+
+.advantage-list .title,
+.team-list .team-name {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}   
+
+/* serrvice */
+
+
+/* team */
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-list .team-name {
+    color: var(--title-text-color);
 }
 
 /* Футер */
@@ -134,7 +178,7 @@ ul {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6)
 ;
