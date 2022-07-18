@@ -17,6 +17,7 @@
     --head-text-color: #FFFFFF;
     --primary-bg-color: #FFFFFF;
     --background-footer: #2F303A;
+    --background-secondary: #F5F4FA;
  }
 
 .page {
@@ -117,6 +118,8 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -151,7 +154,7 @@ ul {
 /* team */
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--background-secondary);
 }
 
 /* Футер */
@@ -187,6 +190,10 @@ ul {
     font-style: normal; 
     color: rgba(255, 255, 255, 0.6);
 }
+.adress-footer:hover, .footer-link:hover,
+.adress-footer:focus, .footer-link:focus {
+    color: var(--accent-color);
+}
 
 /* Portfolio */
 .portfolio .portfolio-title {
@@ -207,6 +214,22 @@ ul {
 .portfolio-link {
     text-decoration: none;
 }
+.portfolio-link:hover, .portfolio-title:hover,
+.portfolio-text:hover,
+.portfolio-link:focus, .portfolio-title:focus,
+.portfolio-text:focus {
+    color: var(--accent-color);
+ }
 
  /* button portfolio */
 
+.button-portfolio {
+    color: var(--title-text-color);
+    background-color: var(--background-secondary);
+    cursor: pointer;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--head-text-color);
+    background-color: var(--accent-color);
+}
