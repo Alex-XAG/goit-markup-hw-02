@@ -120,8 +120,10 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    font-family: inherit;
+    
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.06em;
+
     
     cursor: pointer;
 }
