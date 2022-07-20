@@ -94,7 +94,7 @@ ul {
 }
 /* hero */
 .hero {
-    background-color: var(--primary-text-color);
+    background-color: var(--background-footer);
 }
 .hero-title {
     color:var(--head-text-color);
@@ -121,7 +121,7 @@ ul {
     font-size: 16px;
     line-height: 1.88;
     
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     letter-spacing: 0.06em;
 
     
@@ -149,6 +149,7 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.14;
+    text-transform: uppercase;
 }   
 
 /* serrvice */
@@ -189,7 +190,7 @@ ul {
     color: var(--head-text-color);
 }
 .footer .adress-footer {
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 1.71;
 
@@ -242,7 +243,7 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     
     color: var(--title-text-color);
     background-color: var(--background-secondary);
